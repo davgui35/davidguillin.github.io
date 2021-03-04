@@ -1,0 +1,18 @@
+@mixin spanStyle($taille, $style, $bg) {
+  display: block;
+  width: 80%;
+  margin: 0 auto;
+  border-bottom: $taille $style $bg;
+}
+
+@mixin spanStyleSmall($taille, $style, $bg) {
+  display: block;
+  width: 60%;
+  border-bottom: $taille $style $bg;
+}
+
+@mixin flexMid {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

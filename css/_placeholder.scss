@@ -1,0 +1,60 @@
+%style1 {
+  margin: 0;
+  font-size: 4rem;
+  text-transform: uppercase;
+}
+
+%styleH2 {
+  font-size: 2rem;
+  color: $color-text;
+  text-transform: uppercase;
+  font-weight: 100;
+  margin: 25px 0px 25px 70px;
+}
+
+%styleMenu {
+  ul {
+    text-align: center;
+  }
+  li {
+    display: block;
+    list-style-type: none;
+    padding: 20px;
+
+    a {
+      color: $color-text;
+      text-decoration: none;
+      padding-bottom: 10px;
+      font-size: 1.3rem;
+      cursor: pointer;
+
+      &::after {
+        content: "";
+        background: $bg-color-green;
+        display: block;
+        width: 0px;
+        height: 2px;
+        margin: 5px auto 0 auto;
+        transition: width 0.2s ease-out;
+      }
+
+      &:hover::after {
+        width: 100%;
+      }
+    }
+  }
+}
+
+%logo_skills {
+  width: 45px;
+}
+
+%borderSkills {
+  border: 2px solid $bg-color-green;
+  margin: 5px;
+}
+
+%borderSkillsHover {
+  border: 2px solid #36b475;
+  margin: 5px;
+}
